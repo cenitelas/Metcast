@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginVertical="7dp"
+    android:background="@drawable/city_holder_panel"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp">
+
+    <ImageView
+        android:id="@+id/view_holder_city_icon"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/view_holder_city_name"
+        android:layout_width="0dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toEndOf="@+id/view_holder_city_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_holder_city_temp"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_holder_city_icon" />
+
+    <TextView
+        android:id="@+id/view_holder_city_weather"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/view_holder_city_temp"
+        app:layout_constraintTop_toBottomOf="@+id/view_holder_city_name" />
+
+    <Button
+        android:id="@+id/view_holder_city_delete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_baseline_close_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
